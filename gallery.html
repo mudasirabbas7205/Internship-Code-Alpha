@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+    </div>
+
+    <div class="gallery">
+        <img src="gallery-assests/nature-1.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-2.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-3.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-4.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-5.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-1.avif" class="city" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-6.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-7.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/nature-8.avif" class="nature" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-2.avif" class="city" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-3.avif" class="city" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-4.avif" class="city" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-5.avif" class="city" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-6.avif" class="city" onclick="openLightbox(this)">
+        <img src="gallery-assests/city-7.avif" class="city" onclick="openLightbox(this)">
+    </div>
+
+    <div id="lightbox">
+        <span onclick="closeLightbox()">✖</span>
+        <button onclick="prev()">❮</button>
+        <img id="lightbox-img">
+        <button onclick="next()">❯</button>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>
